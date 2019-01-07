@@ -17,6 +17,7 @@ namespace ameenanewrepo
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseIISIntegration()
                 .UseStartup<Startup>()
+                .UseStartup("SampleApp")
                 .Build();
 
             host.Run();
